@@ -3,133 +3,6 @@
 <head>
 <!-- https://www.base64-image.de/  https://templates.mailchimp.com/resources/inline-css/-->
 <!-- add mailTo to managers?  -->
-<style type='text/css'>
-
-*{
-    font-family: 'Open Sans', 'Helvetica Neue', 'Lucida Grande', Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #333;
-	
-	  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
-}
-
-
-.parentContainer{
-padding: 20px;
-height:370px;
-width: 600px;
-display:flex;
-gap:30px;
-}
-
-.teamManager{
-display:flex;
-align-items:center;
-}
-
-.staffContainer{
-padding: 20px;
-height:100%;
-width: calc(100% - 190px);
-display:flex;
-flex-direction:row;
-flex-wrap: nowrap;
-justify-content: space-between;
-
-width:190px;
-gap: 15px;
-}
-.section{
-width:190px;
-}
-.staff{
-width:180px;
-display:flex;
-flex-wrap:wrap;
-align-items:flex-start:
-height: calc(100% - 180px);
-}
-.divider{
-background-color:#d3d3d3;
-height:60%;
-width:0px;
-border:1px solid #d3d3d3;
-align-self:center;
-}
-
-
-.manager{
-height:180px;
-width:180px;
-font-size:12px;
-}
-.lead{
-height:150px;
-width:150px;
-font-size:10px;
-}
-.nonLead{
-height:50px;
-width:50px;
-font-size:6px;
-opacity:1;
-transition: transform 0.3s ease;
-
-}
-.person{
-position:relative;
-overflow:hidden;
-border-radius:50%;
-margin:2px;
-}
-.person img{
-position:absolute;
-border-radius:50%;
-z-index:1;
-width: 100%;
-height: 100%;
-}
-.overlayDIV{
-position:absolute;
-top:65%;
-width: 100%;
-height: 35%;
-z-index:2;
-background-color: #d3d3d3e4;
-display:flex;
-align-items: center;
-justify-content: center;
-flex-direction:column;
-}
-.personRole{
-text-align:center;
-font-size:0.7em;
-overflow-wrap: anywhere;
-padding-left: 12%;
-padding-right: 12%;
-}
-.personName{
-font-weight:600;
-text-align:center;
-font-size:1em;
-margin-top:-5%;
-}
-
-
-
-.nonLead:hover{
-transform:scale(1.6);
-z-index:5;
-border:3px solid white;
-}
-
-
-
-
-</style>
 
 </head>
 <body>
@@ -200,11 +73,15 @@ align-self:center;
 height:110px;
 width:110px;
 font-size:16px;
+transition: transform 0.3s ease;
+
 }
 .lead{
 height:90px;
 width:90px;
 font-size:14px;
+transition: transform 0.3s ease;
+
 }
 .nonLead{
 height:50px;
@@ -241,7 +118,7 @@ flex-direction:column;
 }
 .personRole{
 text-align:center;
-font-size:0.6em;
+font-size:0.55em;
 overflow-wrap: anywhere;
 padding-left: 12%;
 padding-right: 12%;
@@ -263,10 +140,23 @@ padding-right:15px;
 transform:scale(1.6);
 z-index:5;
 border:3px solid white;
+
 }
 
+.lead:hover, .manager:hover{
+transform:scale(1.6);
+z-index:5;
+border:3px solid white;
+font-size:0.7em;
+}
 
+.lead:hover .personName, .manager:hover .personName{
+padding:0;
+}
 
+.lead:hover .personRole, .manager:hover .personRole{
+display:block;
+}
 
 </style>
 

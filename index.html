@@ -3,13 +3,15 @@
 <head>
 <!-- https://www.base64-image.de/  https://templates.mailchimp.com/resources/inline-css/-->
 <!-- add mailTo to managers?  -->
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
 <style type='text/css'>
 
 *{
-    font-family: 'Open Sans', 'Helvetica Neue', 'Lucida Grande', Helvetica, Arial, sans-serif;
+font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-style: normal;
     color: #333;
@@ -41,7 +43,7 @@ display:flex;
 flex-direction:row;
 flex-wrap: nowrap;
 justify-content: space-between;
-gap: 8px;
+margin-left:-40px;
 }
 
 .section{
@@ -66,6 +68,7 @@ height:60%;
 width:0px;
 border:1px solid #d3d3d3;
 align-self:center;
+margin-left:-30px;
 }
 
 
@@ -96,6 +99,7 @@ position:relative;
 overflow:hidden;
 border-radius:50%;
 margin:2px;
+cursor:pointer;
 }
 .person img{
 position:absolute;
@@ -118,6 +122,7 @@ flex-direction:column;
 }
 .personRole{
 text-align:center;
+font-weight:900;
 font-size:0.55em;
 overflow-wrap: anywhere;
 padding-left: 12%;
@@ -137,7 +142,10 @@ padding-right:15px;
 .nonLead .overlayDIV{
 opacity:0;
 }
-
+.nonLead .personName{
+padding:9px;
+margin:0;
+}
 
 .nonLead:hover{
 transform:scale(1.6);
@@ -168,7 +176,7 @@ display:block;
 
 <div class="parentContainer">
 
-	<div class="teamManager">
+	<div class="teamManager"><a href="mailto:test@example.com?Subject=Website%20Contact" target="_blank" title="Click to send an email">
 			<div class="manager person">
 				<div class="overlayDIV">
 					<div class="personName">James Makepeace</div>
@@ -176,7 +184,7 @@ display:block;
 				</div>
 				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
 			</div>
-	</div>
+	</a></div>
 	
 	<svg id="eRrxel6n2j51" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><g transform="translate(0 0.000001)"><path d="" fill="none" stroke="#d3d3d3" stroke-width="0.6"/><line x1="-18.723253" y1="0" x2="18.723253" y2="0" transform="matrix(.548039 0 0 1 19.952212 142.296719)" fill="none" stroke="#d3d3d3" stroke-width="3"/><line x1="0" y1="58.577033" x2="0" y2="-58.577033" transform="translate(29.675465 83.719686)" fill="none" stroke="#d3d3d3" stroke-width="3"/><line x1="0" y1="-66.868759" x2="0" y2="66.868759" transform="translate(29.675465 209.165478)" fill="none" stroke="#d3d3d3" stroke-width="3"/><line x1="-21.130527" y1="0" x2="21.130527" y2="0" transform="matrix(.525415 0 0 1 40.805992 274.55)" fill="none" stroke="#d3d3d3" stroke-width="3"/><line x1="-21.130527" y1="0" x2="21.130527" y2="0" transform="matrix(.525415 0 0 1 40.805992 26.65)" fill="none" stroke="#d3d3d3" stroke-width="3"/></g></svg>
 
@@ -186,13 +194,13 @@ display:block;
 
 		<div class="section">
 
-			<div class="lead person">
+			<div class="lead person"><a href="mailto:test@example.com?Subject=Website%20Contact" target="_blank" title="Click to send an email">
 				<div class="overlayDIV">
-					<div class="personName">James Makepeace</div>
-					<div class="personRole">Global Head of BI and Data Engineering</div>
+					<div class="personName">Katherine Hartley</div>
+					<div class="personRole">BI Lead</div>
 				</div>
 				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
-			</div>
+			</a></div>
 
 
 			<div class="staff">
@@ -206,52 +214,47 @@ display:block;
 
 				<div class="nonLead person">
 				<div class="overlayDIV">
-					<div class="personName">Jared Poli</div>
+					<div class="personName">Paul Brumby</div>
 				</div>
 				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
 				</div>
 
 				<div class="nonLead person">
 				<div class="overlayDIV">
-					<div class="personName">Jared Poli</div>
+					<div class="personName">Adam Lowes</div>
 				</div>
 				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
 				</div>
 
 				<div class="nonLead person">
 				<div class="overlayDIV">
-					<div class="personName">Jared Poli</div>
+					<div class="personName">David Waiting</div>
 				</div>
 				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
 				</div>
 
 				<div class="nonLead person">
 				<div class="overlayDIV">
-					<div class="personName">Jared Poli</div>
+					<div class="personName">Ross Towers</div>
 				</div>
 				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
 				</div>
 
 				<div class="nonLead person">
 				<div class="overlayDIV">
-					<div class="personName">Jared Poli</div>
+					<div class="personName">Portia Hansen</div>
 				</div>
 				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
 				</div>
 
 				<div class="nonLead person">
 				<div class="overlayDIV">
-					<div class="personName">Jared Poli</div>
+					<div class="personName">Graham Headley</div>
 				</div>
 				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
 				</div>
 
-				<div class="nonLead person">
-				<div class="overlayDIV">
-					<div class="personName">Jared Poli</div>
-				</div>
-				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
-				</div>
+	
 
 			</div>
 
@@ -263,34 +266,42 @@ display:block;
 
 		<div class="section">
 
-			<div class="lead person">
+			<div class="lead person"><a href="mailto:test@example.com?Subject=Website%20Contact" target="_blank" title="Click to send an email">
 				<div class="overlayDIV">
-					<div class="personName">James Makepeace</div>
-					<div class="personRole">Global Head of BI and Data Engineering</div>
+					<div class="personName">Karl Davis</div>
+					<div class="personRole">Engineering Lead</div>
 				</div>
 				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
-			</div>
+			</a></div>
 
 
 			<div class="staff">
 
 				<div class="nonLead person">
 				<div class="overlayDIV">
-					<div class="personName">Jared Poli</div>
+					<div class="personName">Mo</div>
 				</div>
 				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
 				</div>
 
 				<div class="nonLead person">
 				<div class="overlayDIV">
-					<div class="personName">Jared Poli</div>
+					<div class="personName">Peter</div>
 				</div>
 				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
 				</div>
 
 				<div class="nonLead person">
 				<div class="overlayDIV">
-					<div class="personName">Jared Poli</div>
+					<div class="personName">Kevin</div>
+				</div>
+				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
+				</div>
+				
+				
+				<div class="nonLead person">
+				<div class="overlayDIV">
+					<div class="personName">Rik</div>
 				</div>
 				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
 				</div>
@@ -308,50 +319,23 @@ display:block;
 
 		<div class="section">
 
-			<div class="lead person">
+			<div class="lead person"><a href="mailto:test@example.com?Subject=Website%20Contact" target="_blank" title="Click to send an email">
 				<div class="overlayDIV">
-					<div class="personName">James Makepeace</div>
-					<div class="personRole">Global Head of BI and Data Engineering</div>
+					<div class="personName">Jimmy Sumpter</div>
+					<div class="personRole">STEP Lead</div>
 				</div>
 				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
-			</div>
+			</a></div>
 
 			<div class="staff">
 
 				<div class="nonLead person">
 				<div class="overlayDIV">
-					<div class="personName">Jared Poli</div>
+					<div class="personName">Paul</div>
 				</div>
 				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
 				</div>
 
-				<div class="nonLead person">
-				<div class="overlayDIV">
-					<div class="personName">Jared Poli</div>
-				</div>
-				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
-				</div>
-
-				<div class="nonLead person">
-				<div class="overlayDIV">
-					<div class="personName">Jared Poli</div>
-				</div>
-				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
-				</div>
-
-				<div class="nonLead person">
-				<div class="overlayDIV">
-					<div class="personName">Jared Poli</div>
-				</div>
-				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
-				</div>
-				
-				<div class="nonLead person">
-				<div class="overlayDIV">
-					<div class="personName">Jared Poli</div>
-				</div>
-				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
-				</div>
 			</div>
 
 		</div>

@@ -183,6 +183,39 @@ color:#616161;
 }
 
 
+
+.person img{
+     display: inline-block;
+     position: relative;
+	 background-color:#eee;
+}
+
+.person img:before{
+ content: '';
+ width: calc(100% + 12px);
+ height: calc(100% + 12px);
+background-color: inherit; /*using inherit allows the img tag to hold the BG Col, no style is eee*/
+ border-radius: 50%;
+ position: absolute;
+ top:-6px;
+ left:-6px;
+}
+
+
+img::after {
+     content:attr(alt);
+     font-size: 18px;
+	color: rgb(100, 100, 100);
+     z-index: 2;
+     display: block;
+     position: absolute;	
+	 
+     top: 25%;
+	 text-align:center; /*instead of left*/
+     width: 100%;
+     height: 100%;	 
+	}
+
 </style>
 <div class="title">
 	Meet the Team
@@ -195,9 +228,9 @@ color:#616161;
 			<div class="manager person">
 				<div class="overlayDIV">
 					<div class="personName">James Makepeace</div>
-					<div class="personRole">Global Head of BI and Data Engineering</div>
+					<div class="personRole">Global Head of BI and Analytics</div>
 				</div>
-				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
+				<img alt="JM" style="background-color:#fee1d4" src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">		
 			</div>
 	</a></div>
 	
@@ -212,7 +245,7 @@ color:#616161;
 					<div class="personName">Katherine Hartley</div>
 					<div class="personRole">BI Lead</div>
 				</div>
-				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
+				<img alt="KH"  style="background-color:#ffcfc2" src="">
 			</a></div>
 
 
@@ -222,49 +255,51 @@ color:#616161;
 				<div class="overlayDIV">
 					<div class="personName">Jared Poli</div>
 				</div>
-				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
+				<img alt="JP"  style="background-color:#ffeed0" src="">
 				</div>
 
 				<div class="nonLead person">
 				<div class="overlayDIV">
 					<div class="personName">Paul Brumby</div>
 				</div>
-				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
+				<img alt="PB"  style="background-color:#c0e8e0" src="">
 				</div>
 
-				<div class="nonLead person">
-				<div class="overlayDIV">
-					<div class="personName">Adam Lowes</div>
-				</div>
-				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
-				</div>
+
 
 				<div class="nonLead person">
 				<div class="overlayDIV">
 					<div class="personName">David Waiting</div>
 				</div>
-				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
+				<img alt="DW"  style="background-color:#e9f0c7" src="">
 				</div>
 
 				<div class="nonLead person">
 				<div class="overlayDIV">
 					<div class="personName">Ross Towers</div>
 				</div>
-				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
+				<img alt="RT"  style="background-color:#ffe9e7" src="">
 				</div>
 
 				<div class="nonLead person">
 				<div class="overlayDIV">
+					<div class="personName">Adam Lowes</div>
+				</div>
+				<img alt="AL"  style="background-color:#e4f8d6" src="">
+				</div>
+				
+				<div class="nonLead person">
+				<div class="overlayDIV">
 					<div class="personName">Portia Hansen</div>
 				</div>
-				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
+				<img alt="PH"  style="background-color:#e2e4ec" src="">
 				</div>
 
 				<div class="nonLead person">
 				<div class="overlayDIV">
 					<div class="personName">Graham Headley</div>
 				</div>
-				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
+				<img alt="GH"  style="background-color:#caebec" src="">
 				</div>
 
 	
@@ -284,39 +319,60 @@ color:#616161;
 					<div class="personName">Karl Davis</div>
 					<div class="personRole">Engineering Lead</div>
 				</div>
-				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
+				<img alt="KD"  style="background-color:#f3f8d8" src="">
 			</a></div>
 
 
 			<div class="staff">
-
+			
 				<div class="nonLead person">
 				<div class="overlayDIV">
-					<div class="personName">Mo</div>
+					<div class="personName">Kevin Petty</div>
 				</div>
-				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
+				<img alt="KP"  style="background-color:#feddb9" src="">
 				</div>
-
-				<div class="nonLead person">
-				<div class="overlayDIV">
-					<div class="personName">Peter</div>
-				</div>
-				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
-				</div>
-
-				<div class="nonLead person">
-				<div class="overlayDIV">
-					<div class="personName">Kevin</div>
-				</div>
-				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
-				</div>
-				
 				
 				<div class="nonLead person">
 				<div class="overlayDIV">
-					<div class="personName">Rik</div>
+					<div class="personName">Mohammad Uddin</div>
 				</div>
-				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
+				<img alt="MU"  style="background-color:#ddf6f6" src="">
+				</div>
+
+				<div class="nonLead person">
+				<div class="overlayDIV">
+					<div class="personName">Peter Tyson</div>
+				</div>
+				<img alt="PT"  style="background-color:#f8f0c4" src="">
+				</div>
+				
+				<div class="nonLead person">
+				<div class="overlayDIV">
+					<div class="personName">Rizbir Khan</div>
+				</div>
+				<img alt="RK"  style="background-color:#f3f8d8" src="">
+				</div>
+
+
+				<div class="nonLead person">
+				<div class="overlayDIV">
+					<div class="personName">Orlando Donehue</div>
+				</div>
+				<img alt="OD"  style="background-color:#d3f2ea" src="">
+				</div>
+
+				<div class="nonLead person">
+				<div class="overlayDIV">
+					<div class="personName">Adam Spick</div>
+				</div>
+				<img alt="AS" style="background-color:#f8f0c4" src="">
+				</div>
+				
+				<div class="nonLead person">
+				<div class="overlayDIV">
+					<div class="personName">Rik Sheppard</div>
+				</div>
+				<img alt="RS"  style="background-color:#fee1d4" src="">
 				</div>
 
 
@@ -334,21 +390,42 @@ color:#616161;
 
 			<div class="lead person"><a href="mailto:test@example.com?Subject=Website%20Contact" target="_blank" title="Click to send an email">
 				<div class="overlayDIV">
-					<div class="personName">Jimmy Sumpter</div>
-					<div class="personRole">STEP Lead</div>
+					<div class="personName">Denise Chamrin</div>
+					<div class="personRole">BI Lead</div>
 				</div>
-				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
+				<img alt="DC"   style="background-color:#ffd6d4" src="">
 			</a></div>
 
 			<div class="staff">
 
 				<div class="nonLead person">
 				<div class="overlayDIV">
-					<div class="personName">Paul</div>
+					<div class="personName">Mark Burkart</div>
 				</div>
-				<img src="https://cdn-de1.staffbase.com/eyo-live-de/image/upload/v1698222950/7qxZVqjHXFJMDMttqT3MqbwUWJbFERUoPCXdwUrWm9HKNLhtZJ9oPHCrh8KqHQKAJKIvarNASvzWNciKVu1t1Ih7ARGHxuFjUs7DE9eDcDKnuzxiEeL3NUcMjS3qInfFmElw9pYeNaZeiVMkbDnnTEbZsI2yUbffZ3G3Wm83CW2w26yoT7htgsit1kUXCIWX/download.jpg">
+				<img alt="MB"  style="background-color:#c2e6d6" src="">
 				</div>
 
+				<div class="nonLead person">
+				<div class="overlayDIV">
+					<div class="personName">Hilary Cox</div>
+				</div>
+				<img alt="HC"  style="background-color:#ffe9e7" src="">
+				</div>
+				
+				<div class="nonLead person">
+				<div class="overlayDIV">
+					<div class="personName">Rob Hanus</div>
+				</div>
+				<img alt="RH"  style="background-color:#fff7d3" src="">
+				</div>
+
+				<div class="nonLead person">
+				<div class="overlayDIV">
+					<div class="personName">Jennifer Grohs</div>
+				</div>
+				<img alt="JG"  style="background-color:#dbf4e8" src="">
+				</div>
+				
 			</div>
 
 		</div>
@@ -358,6 +435,13 @@ color:#616161;
 
 </div>
 
+<script>
+
+
+//style each circle
+
+
+</script>
 
 </body>
 </html>
